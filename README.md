@@ -1,2 +1,2 @@
 # SoftUni-Courses
-Here are my courses from SoftUni.
+Here are my solutions for problems from SoftUni courses
