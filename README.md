@@ -1,2 +1,1 @@
-# SoftUni-Courses
-Here are my solutions for problems from SoftUni courses
+This repository is a collection of problems from the courses I am currently taking at SoftUni
