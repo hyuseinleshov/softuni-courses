@@ -42,7 +42,7 @@ public class Vehicle {
 
         double remainingFuel = getFuel() - (kilometres * getFuelConsumption());
 
-        if (remainingFuel > 0) {
+        if (remainingFuel >= 0) {
 
            setFuel(remainingFuel);
         }
