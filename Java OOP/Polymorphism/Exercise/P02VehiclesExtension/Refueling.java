@@ -1,4 +1,4 @@
-package Exercise.P01Vehicles;
+package Exercise.P02VehiclesExtension;
 
 public interface Refueling {
 

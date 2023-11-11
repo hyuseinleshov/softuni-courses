@@ -1,4 +1,4 @@
-package P01Vehicles;
+package Exercise.P01Vehicles;
 
 public class Vehicle implements Driving, Refueling {
 

@@ -1,9 +1,9 @@
-package Exercise.P01Vehicles;
+package Exercise.P02VehiclesExtension;
 
 public class Car extends Vehicle {
 
-    public Car(double fuelQuantity, double fuelConsumption) {
-        super(fuelQuantity, fuelConsumption + 0.9);
+    public Car(double fuelQuantity, double fuelConsumption, double tankCapacity) {
+        super(fuelQuantity, fuelConsumption + 0.9, tankCapacity);
     }
 
     @Override
