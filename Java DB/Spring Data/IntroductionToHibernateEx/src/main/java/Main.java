@@ -21,10 +21,74 @@ public class Main {
 //        P06AddingANewAddressAndUpdatingTheEmployee(entityManager, scanner);
 //        P07AddressesWithEmployeeCount(entityManager);
 //        P08GetEmployeesWithProject(entityManager, scanner);
-//        P09FindTheLatest10Projects(entityManager);
-        P10IncreaseSalaries(entityManager);
+        P09FindTheLatest10Projects(entityManager);
+//        P10IncreaseSalaries(entityManager);
+//        P11FindEmployeesByFirstName(entityManager, scanner);
+//        P12EmployeesMaximumSalaries(entityManager);
+//        P13RemoveTowns(entityManager, scanner);
 
         entityManager.getTransaction().commit();
+    }
+
+    private static void P13RemoveTowns(EntityManager entityManager, Scanner scanner) {
+        String townName = scanner.nextLine();
+
+        List<Town> resultList = entityManager.createQuery("FROM Town WHERE name = :townName", Town.class)
+                .setParameter("townName", townName)
+                .getResultList();
+
+        if (!resultList.isEmpty()) {
+            Town town = resultList.get(0);
+
+            List<Address> addresses = entityManager.createQuery("SELECT a FROM Address a JOIN a.town t WHERE t.name = :name", Address.class)
+                    .setParameter("name", town.getName())
+                    .getResultList();
+
+            addresses.forEach(a -> {
+                a.getEmployees().forEach(e -> {
+                    e.setAddress(null);
+                    entityManager.persist(e);
+                });
+                entityManager.remove(a);
+            });
+
+            System.out.printf("%d address in %s deleted\n", addresses.size(), town.getName());
+            entityManager.remove(town);
+        }
+
+    }
+
+        private static void P12EmployeesMaximumSalaries(EntityManager entityManager) {
+        String hql = "SELECT d.name, MAX(e.salary) AS maxSalary FROM Employee e JOIN e.department d GROUP BY e.department HAVING MAX(e.salary) < 30000 OR MAX(e.salary) > 70000";
+        TypedQuery<Tuple> query = entityManager.createQuery(hql, Tuple.class);
+        List<Tuple> maxSalaries = query.getResultList();
+
+        System.out.println();
+
+        for (Tuple tuple : maxSalaries) {
+            String departmentName = tuple.get(0, String.class);
+            BigDecimal maxSalary = tuple.get(1, BigDecimal.class);
+            System.out.printf("%s %.2f\n", departmentName, maxSalary);
+        }
+
+    }
+
+    private static void P11FindEmployeesByFirstName(EntityManager entityManager, Scanner scanner) {
+        String pattern = scanner.nextLine();
+
+        String hql = "FROM Employee WHERE firstName LIKE :pattern";
+        TypedQuery<Employee> query = entityManager.createQuery(hql, Employee.class);
+        query.setParameter("pattern", pattern + "%");
+
+        List<Employee> employees = query.getResultList();
+
+        if (employees.isEmpty()) {
+            System.out.println("No employees found with the given pattern.");
+        } else {
+            for (Employee employee : employees) {
+                System.out.printf("%s %s - %s - ($%.2f)\n", employee.getFirstName(), employee.getLastName(), employee.getJobTitle(), employee.getSalary());
+            }
+        }
     }
 
     private static void P10IncreaseSalaries(EntityManager entityManager) {
@@ -40,7 +104,7 @@ public class Main {
     }
 
     private static void P09FindTheLatest10Projects(EntityManager entityManager) {
-        Query query = entityManager.createQuery("FROM Project ORDER BY startDate DESC, name");
+        TypedQuery<Project> query = entityManager.createQuery("FROM Project ORDER BY startDate DESC, name", Project.class);
         query.setMaxResults(10);
         List<Project> projects = query.getResultList();
 
