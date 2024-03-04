@@ -23,11 +23,11 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        seedData();
+//        seedData();
 //        getAllBooksAfterYear2000();
 //        getAuthorsFirstLastNameBeforeBooks1990();
 //        getAllAuthorsByBookDesc();
-        printBooksByGeorgePowell();
+//        printBooksByGeorgePowell();
     }
 
     private void printBooksByGeorgePowell() {
