@@ -22,7 +22,7 @@ You can get more information about SoftUni curriculum here https://softuni.bg/cu
 | <a href="https://softuni.bg/trainings/4225/java-advanced-september-2023"> Java Advanced </a>                                     | <a href="https://softuni.bg/certificates/details/188685/f2b11819"> Link</a> |
 | <a href="https://softuni.bg/trainings/4226/java-oop-oktober-2023"> Java OOP </a>                                                 | <a href="https://softuni.bg/certificates/details/195806/097699bd"> Link</a> |
 | <a href="https://softuni.bg/trainings/4365/mysql-january-2024"> MySQL </a>                                                       | <a href="https://softuni.bg/certificates/details/202896/12da665f"> Link</a> |
-| <a href="https://softuni.bg/trainings/4366/spring-data-february-2024"> MySQL </a>                                                | <a href="https://softuni.bg/certificates/details/209392/671c2ba4"> Link</a> |
+| <a href="https://softuni.bg/trainings/4366/spring-data-february-2024"> Spring Data </a>                                                | <a href="https://softuni.bg/certificates/details/209392/671c2ba4"> Link</a> |
 
 </td>
 </tr>
