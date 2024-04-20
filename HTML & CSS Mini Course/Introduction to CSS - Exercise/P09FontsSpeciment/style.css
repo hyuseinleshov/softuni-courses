@@ -1,0 +1,14 @@
+main {
+    padding: 30px;
+}
+
+main p,
+main ul,
+main ol {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+h2 {
+    font-family: "Dancing Script", cursive;
+}

@@ -1,0 +1,51 @@
+.nav-container {
+    background-color: #FAFAFA;
+    max-width: 200px;
+    border: 1px solid gray;
+}
+
+.nav-container ul {
+    list-style-type: none;
+}
+
+.nav-container .nav-link {
+    color: #CA1E14;
+    text-decoration: none;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.nav-container .nav-link i {
+    margin-right: 6px;
+}
+
+.buttons-container {
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 6px 12px;
+    color: white;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.btn i {
+    color: white;
+}
+
+.btn-checkout {
+    background-color: green;
+    border-color: darkgreen;
+}
+
+.btn-info {
+    background-color: blue;
+    border-color: darkblue;
+}
+
+.btn-delete {
+    background-color: red;
+    border-color: darkred;
+}

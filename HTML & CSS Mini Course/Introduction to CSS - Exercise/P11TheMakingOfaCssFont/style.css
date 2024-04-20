@@ -1,0 +1,21 @@
+body {
+    background-color: #8D0000;
+}
+
+pre {
+    color: white;
+    text-align: left;
+    font-size: 12px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    color: #E6C58A;
+    text-align: center;
+}

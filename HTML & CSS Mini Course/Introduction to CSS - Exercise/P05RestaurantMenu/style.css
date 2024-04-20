@@ -1,0 +1,21 @@
+h1 {
+    color: #747A85;
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+h2 {
+    color: #4E4D54;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 16px;
+}
+
+p {
+    color: #747C88;
+    text-indent: 8px;
+    margin-left: 1%;
+    font-family: sa;
+}

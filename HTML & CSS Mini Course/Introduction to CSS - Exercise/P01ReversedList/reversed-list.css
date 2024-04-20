@@ -1,0 +1,6 @@
+.bordered-list {
+    border: solid 1px black;
+    background-color: #E0E0E0;
+    color: #98121A;
+    width: 95%; /* Adjust the width as needed */
+}

@@ -1,0 +1,24 @@
+.btn-clickMe {
+    background-color: #008400;
+}
+
+.btn-emailMe {
+    background-color: #FFA600;
+}
+
+.btn {
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.buttons-container {
+    display:flex;
+    flex-direction: column;
+    max-width: 20%;
+}
+
