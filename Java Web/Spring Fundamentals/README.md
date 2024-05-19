@@ -1,2 +1,2 @@
-Spring Fundamentals - may 2024
+# Spring Fundamentals - may 2024
 In the course, students learn basic principles of web development such as the HTTP protocol, sessions, and ways to save state. They get basic knowledge and skills to work with the Spring framework, its components and architecture, the definition of models, views and partial views with the Thymeleaf view engine, the definition of controllers, the various data transfer protocols. Techniques for creating an MVC web application with support for all basic functionality are studied: data visualization, tables, CRUD operations on the data, validation and others.

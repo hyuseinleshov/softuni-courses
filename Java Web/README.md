@@ -1,2 +1,2 @@
-Java Web - module
+# Java Web - module
 In this module, students learn basic principles of web development, such as the HTTP protocol, sessions, and ways to save state. They get basic knowledge and skills to work with the Spring framework, its components and architecture. Defining models, views and partial views with the Thymeleaf view engine, defining controllers, the various data transfer protocols. Techniques for creating an MVC web application with support for all basic functionalities are studied: data visualization, tables, CRUD operations on the data, validation, etc.
