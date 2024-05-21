@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "bg.softuni"
-version = "0.0.1-SNAPSHOT"
+version = "1.0.0-SNAPSHOT"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_21
@@ -16,14 +16,11 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    runtimeOnly("com.mysql:mysql-connector-j")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-
-    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.2.0")
-    // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
-    implementation("com.mysql:mysql-connector-j:8.3.0")
 }
 
 tasks.withType<Test> {

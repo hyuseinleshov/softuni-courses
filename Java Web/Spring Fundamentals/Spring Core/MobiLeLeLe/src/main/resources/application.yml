@@ -1,7 +1,7 @@
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/spring_core?createDatabaseIfNotExist=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/mobilelele?createDatabaseIfNotExist=true&useSSL=false
     username: root
     password: E3G,1%k(CCD+WP+
 

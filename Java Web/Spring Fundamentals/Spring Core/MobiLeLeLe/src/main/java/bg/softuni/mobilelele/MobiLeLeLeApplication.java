@@ -1,13 +1,13 @@
-package bg.softuni.springcore;
+package bg.softuni.mobilelele;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringCoreApplication {
+public class MobiLeLeLeApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringCoreApplication.class, args);
+        SpringApplication.run(MobiLeLeLeApplication.class, args);
     }
 
 }
