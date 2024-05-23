@@ -29,7 +29,7 @@ public class Offer extends BaseEntity {
     @Enumerated(EnumType.ORDINAL)
     private Transmission transmission;
 
-    private Year year;
+    private int year;
     private LocalDateTime created;
     private LocalDateTime modified;
 
@@ -89,11 +89,11 @@ public class Offer extends BaseEntity {
         this.transmission = transmission;
     }
 
-    public Year getYear() {
+    public int getYear() {
         return year;
     }
 
-    public void setYear(Year year) {
+    public void setYear(int year) {
         this.year = year;
     }
 

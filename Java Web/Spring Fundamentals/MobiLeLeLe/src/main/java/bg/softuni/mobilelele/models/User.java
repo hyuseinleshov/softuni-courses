@@ -21,7 +21,8 @@ public class User extends BaseEntity {
     @Column(name = "is_active")
     private boolean isActive;
 
-    @ManyToOne
+    @ManyToOne()
+    @JoinColumn(name = "role_id")
     private UserRole role;
 
     @Column(name = "image_url")
