@@ -1,11 +1,8 @@
-package bg.softuni.mobilelele.model;
+package bg.softuni.mobilelele.models;
 
-import bg.softuni.mobilelele.model.enums.Engine;
-import bg.softuni.mobilelele.model.enums.Transmission;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import bg.softuni.mobilelele.models.enums.Engine;
+import bg.softuni.mobilelele.models.enums.Transmission;
+import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -16,6 +13,8 @@ import java.time.Year;
 public class Offer extends BaseEntity {
     @Column(columnDefinition = "TEXT")
     private String description;
+
+    @Enumerated(EnumType.ORDINAL)
     private Engine engine;
 
     @Column(name = "image_url")
@@ -26,15 +25,20 @@ public class Offer extends BaseEntity {
 
     @Column(columnDefinition = "DECIMAL(19, 2)")
     private BigDecimal price;
+
+    @Enumerated(EnumType.ORDINAL)
     private Transmission transmission;
+
     private Year year;
     private LocalDateTime created;
     private LocalDateTime modified;
 
     @ManyToOne
+    @JoinColumn(name = "model_id")
     private Model model;
 
     @ManyToOne
+    @JoinColumn(name = "seller_id")
     private User seller;
 
     public String getDescription() {

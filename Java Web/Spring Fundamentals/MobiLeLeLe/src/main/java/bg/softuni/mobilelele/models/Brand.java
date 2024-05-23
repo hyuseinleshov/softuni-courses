@@ -1,4 +1,4 @@
-package bg.softuni.mobilelele.model;
+package bg.softuni.mobilelele.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 public class Brand extends BaseEntity {
     @Column(nullable = false)
     private String name;
+
     private LocalDateTime created;
     private LocalDateTime modified;
 

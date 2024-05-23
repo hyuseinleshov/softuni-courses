@@ -1,6 +1,6 @@
-package bg.softuni.mobilelele.model;
+package bg.softuni.mobilelele.models;
 
-import bg.softuni.mobilelele.model.enums.Category;
+import bg.softuni.mobilelele.models.enums.Category;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -10,10 +10,11 @@ import java.time.LocalDateTime;
 public class Model extends BaseEntity {
     @Column(nullable = false)
     private String name;
+
     @Enumerated(EnumType.ORDINAL)
     private Category category;
 
-    @Column(name = "image_url", columnDefinition = "VARCHAR(512)")
+    @Column(name = "image_url", length = 512)
     private String imageUrl;
 
     @Column(name = "start_year")
@@ -24,7 +25,9 @@ public class Model extends BaseEntity {
 
     private LocalDateTime created;
     private LocalDateTime modified;
+
     @ManyToOne
+    @JoinColumn(name = "brand_id")
     private Brand brand;
 
     public String getName() {
