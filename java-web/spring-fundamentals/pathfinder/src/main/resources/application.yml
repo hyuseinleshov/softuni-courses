@@ -33,3 +33,9 @@ spring:
   #api-key:
   #api-secret:
   #cloud-name:
+logging:
+  level:
+    org: WARN
+    blog: WARN
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
