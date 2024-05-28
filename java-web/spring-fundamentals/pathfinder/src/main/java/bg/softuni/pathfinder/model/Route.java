@@ -12,11 +12,11 @@ public class Route extends BaseEntity {
     @Column(name = "gpx_coordinates", columnDefinition = "LONGTEXT")
     private String gpxCoordinates;
 
+    @Column(columnDefinition = "TEXT")
     private String description;
 
-    @Column(name = "level_enum")
     @Enumerated(EnumType.STRING)
-    private Level levelEnum;
+    private Level level;
 
     @Column(nullable = false, unique = true)
     private String name;
@@ -53,12 +53,12 @@ public class Route extends BaseEntity {
         this.description = description;
     }
 
-    public Level getLevelEnum() {
-        return levelEnum;
+    public Level getLevel() {
+        return level;
     }
 
-    public void setLevelEnum(Level levelEnum) {
-        this.levelEnum = levelEnum;
+    public void setLevel(Level level) {
+        this.level = level;
     }
 
     public String getName() {

@@ -38,4 +38,12 @@ public class Category extends BaseEntity {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public Set<Route> getRoutes() {
+        return routes;
+    }
+
+    public void setRoutes(Set<Route> routes) {
+        this.routes = routes;
+    }
 }
