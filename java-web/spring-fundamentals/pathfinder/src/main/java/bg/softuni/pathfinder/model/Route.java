@@ -2,14 +2,18 @@ package bg.softuni.pathfinder.model;
 
 import bg.softuni.pathfinder.model.enums.Level;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "routes")
 public class Route extends BaseEntity {
-    @Column(name = "gpx_coordinates", columnDefinition = "LONGTEXT")
+    @Column(columnDefinition = "LONGTEXT")
     private String gpxCoordinates;
 
     @Column(columnDefinition = "TEXT")
@@ -22,9 +26,9 @@ public class Route extends BaseEntity {
     private String name;
 
     @ManyToOne
+    @JoinColumn(name = "author_id")
     private User author;
 
-    @Column(name = "video_url")
     private String videoUrl;
 
     @ManyToMany()
@@ -35,61 +39,5 @@ public class Route extends BaseEntity {
 
     public Route() {
         this.categories = new HashSet<>();
-    }
-
-    public String getGpxCoordinates() {
-        return gpxCoordinates;
-    }
-
-    public void setGpxCoordinates(String gpxCoordinates) {
-        this.gpxCoordinates = gpxCoordinates;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Level getLevel() {
-        return level;
-    }
-
-    public void setLevel(Level level) {
-        this.level = level;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public User getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(User author) {
-        this.author = author;
-    }
-
-    public String getVideoUrl() {
-        return videoUrl;
-    }
-
-    public void setVideoUrl(String videoUrl) {
-        this.videoUrl = videoUrl;
-    }
-
-    public Set<Category> getCategories() {
-        return categories;
-    }
-
-    public void setCategories(Set<Category> categories) {
-        this.categories = categories;
     }
 }
