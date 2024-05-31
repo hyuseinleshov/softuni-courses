@@ -1,22 +1,24 @@
 package bg.softuni.pathfinder.web;
 
+import bg.softuni.pathfinder.service.dto.UserLoginDTO;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("/users")
 public class UserController {
     @GetMapping("/login")
-    public String showLoginPage() {
+    public String showLoginForm(Model model) {
+        model.addAttribute("userLoginDTO", new UserLoginDTO());
         return "login";
     }
 
     @PostMapping("/login")
-    public String login(@RequestParam String username, @RequestParam String password) {
-        return "redirect:/index";
+    public String login(UserLoginDTO userLoginDTO) {
+        return "redirect:/";
     }
 
     @GetMapping("/register")
