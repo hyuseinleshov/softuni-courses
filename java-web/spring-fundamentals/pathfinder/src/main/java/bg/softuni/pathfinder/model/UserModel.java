@@ -5,14 +5,15 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "users")
-public class User extends BaseEntity {
+public class UserModel extends BaseEntity {
     @Column(nullable = false, unique = true)
     private String username;
 
@@ -31,13 +32,13 @@ public class User extends BaseEntity {
     @JoinTable(name = "users_roles",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "roles_id"))
-    private Set<Role> roles;
+    private List<Role> roles;
 
     @Column(columnDefinition = "VARCHAR(255)")
     @Enumerated(EnumType.STRING)
     private Level level;
 
-    public User() {
-        this.roles = new HashSet<>();
+    public UserModel() {
+        this.roles = new ArrayList<>();
     }
 }

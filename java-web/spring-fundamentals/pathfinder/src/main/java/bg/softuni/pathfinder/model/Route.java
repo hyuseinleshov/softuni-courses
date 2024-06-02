@@ -27,7 +27,7 @@ public class Route extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "author_id")
-    private User author;
+    private UserModel author;
 
     private String videoUrl;
 

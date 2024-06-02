@@ -19,9 +19,9 @@ public class Message extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "author_id")
-    private User author;
+    private UserModel author;
 
     @ManyToOne
     @JoinColumn(name = "recipient_id")
-    private User recipient;
+    private UserModel recipient;
 }

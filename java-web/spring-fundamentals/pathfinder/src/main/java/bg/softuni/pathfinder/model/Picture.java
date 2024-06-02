@@ -16,7 +16,7 @@ public class Picture extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "author_id")
-    private User author;
+    private UserModel author;
 
     @ManyToOne
     @JoinColumn(name = "route_id")
