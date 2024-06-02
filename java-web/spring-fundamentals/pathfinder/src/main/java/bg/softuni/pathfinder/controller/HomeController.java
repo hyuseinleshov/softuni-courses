@@ -1,7 +1,6 @@
-package bg.softuni.pathfinder.web;
+package bg.softuni.pathfinder.controller;
 
 import bg.softuni.pathfinder.model.User;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,8 +12,8 @@ public class HomeController {
     the currentUser parameter. */
     // @AuthenticationPrincipal User currentUser
     @GetMapping("/")
-    public String showIndexPage() {
-//        model.addAttribute("currentUser", currentUser);
+    public String showIndexPage(Model model, User currentUser) {
+        model.addAttribute("currentUser", currentUser);
         return "index";
     }
 }
