@@ -1,6 +1,6 @@
 package bg.softuni.mobilelele.service;
 
-import bg.softuni.mobilelele.models.UserRole;
+import bg.softuni.mobilelele.model.UserRole;
 
 import java.util.List;
 

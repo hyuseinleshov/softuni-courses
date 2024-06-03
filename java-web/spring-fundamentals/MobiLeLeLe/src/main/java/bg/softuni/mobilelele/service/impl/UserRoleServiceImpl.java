@@ -1,6 +1,6 @@
 package bg.softuni.mobilelele.service.impl;
 
-import bg.softuni.mobilelele.models.UserRole;
+import bg.softuni.mobilelele.model.UserRole;
 import bg.softuni.mobilelele.repository.UserRoleRepository;
 import bg.softuni.mobilelele.service.UserRoleService;
 import org.springframework.stereotype.Service;

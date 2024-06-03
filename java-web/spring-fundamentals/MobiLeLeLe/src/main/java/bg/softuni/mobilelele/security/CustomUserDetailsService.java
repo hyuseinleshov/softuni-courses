@@ -1,8 +1,9 @@
-package bg.softuni.pathfinder.security;
+package bg.softuni.mobilelele.security;
 
-import bg.softuni.pathfinder.model.Role;
-import bg.softuni.pathfinder.model.UserEntity;
-import bg.softuni.pathfinder.repository.UserRepository;
+import bg.softuni.mobilelele.model.UserEntity;
+import bg.softuni.mobilelele.model.UserRole;
+import bg.softuni.mobilelele.model.enums.Role;
+import bg.softuni.mobilelele.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -13,8 +14,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Collections;
 
 @Service
 public class CustomUserDetailsService  implements UserDetailsService {
@@ -28,11 +28,17 @@ public class CustomUserDetailsService  implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        UserEntity user = userRepository.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException("Username not found"));
-        return new User(user.getUsername(), user.getPassword(), mapRolesToAuthorities(user.getRoles()));
+        UserEntity user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new UsernameNotFoundException("Username not found"));
+
+        return new User(user.getUsername(), user.getPassword(), user.isActive(),
+                true, true, true,
+                mapRolesToAuthorities(user.getRole()));
     }
 
-    private Collection<GrantedAuthority> mapRolesToAuthorities(List<Role> roles) {
-        return roles.stream().map(role -> new SimpleGrantedAuthority(role.getName().name())).collect(Collectors.toList());
+    private Collection<? extends GrantedAuthority> mapRolesToAuthorities(UserRole role) {
+        Role roleName = role.getName();
+        SimpleGrantedAuthority authority = new SimpleGrantedAuthority("ROLE_" + roleName.name());
+        return Collections.singletonList(authority);
     }
 }

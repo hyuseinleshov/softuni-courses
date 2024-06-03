@@ -22,14 +22,16 @@
     <h1 class="border-bottom">Register</h1>
     <div class="d-flex justify-content-center ">
         <div class="row g-3">
-            <form th:object="${registerDto}" th:action="@{/api/auth/register}" th:method="post">
+            <form
+                    action="/"
+                    method="">
                 <div>
                     <div class="col-auto">
                         <label for="inputUsername" class="col-form-label ">Username</label>
                     </div>
                     <div class="col-auto">
                         <input name="username"
-                               th:field="*{username}"
+                               
                                required minlength="5" maxlength="20"
                                type="text"
                                id="inputUsername"
@@ -50,7 +52,6 @@
                     </div>
                     <div class="col-auto">
                         <input name="fullname"
-                               th:field="*{fullname}"
                                required minlength="5" maxlength="20"
                                type="text"
                                id="inputFullName"
@@ -67,8 +68,7 @@
                     </div>
                     <div class="col-auto">
                         <input name="email"
-                               th:field="*{email}"
-                               required
+								required
                                type="email"
                                id="inputEmail"
                                class="form-control"
@@ -82,9 +82,7 @@
                         <label for="inputAge" class="col-form-label ">Age</label>
                     </div>
                     <div class="col-auto">
-                        <input name="age"
-                               th:field="*{age}"
-                               required
+                        <input name="age" required
                                type="number"
                                id="inputAge"
                                class="form-control"
@@ -100,9 +98,7 @@
                     </div>
                     <div class="col-auto">
                         <input name="password"
-                               th:field="*{password}"
-                               required
-                               minlength="5" maxlength="20"
+                                required minlength="5" maxlength="20"
                                type="password"
                                id="inputPassword"
                                class="form-control"
@@ -120,8 +116,7 @@
                     </div>
                     <div class="col-auto">
                         <input name="confirmPassword"
-                               th:field="*{confirmPassword}"
-                               required minlength="5" maxlength="20"
+                                required minlength="5" maxlength="20"
                                type="password"
                                id="inputConfirmPassword"
                                class="form-control"
@@ -135,14 +130,6 @@
 
                 <div class="d-flex justify-content-center mt-4">
                     <button class="btn btn-primary btn-block w-50" type="submit">Register</button>
-                </div>
-
-                <div th:if="${error}" class="text-danger mt-2">
-                    <p th:text="${error}">Error message</p>
-                </div>
-
-                <div th:if="${success}" class="text-success mt-2">
-                    <p th:text="${success}">User registered successfully!</p>
                 </div>
 
             </form>

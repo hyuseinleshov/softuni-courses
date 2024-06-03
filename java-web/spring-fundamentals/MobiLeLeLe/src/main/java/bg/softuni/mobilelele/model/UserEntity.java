@@ -1,4 +1,4 @@
-package bg.softuni.mobilelele.models;
+package bg.softuni.mobilelele.model;
 
 import jakarta.persistence.*;
 
@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "users")
-public class User extends BaseEntity {
+public class UserEntity extends BaseEntity {
     @Column(nullable = false)
     private String username;
 

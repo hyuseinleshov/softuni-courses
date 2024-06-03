@@ -1,17 +1,16 @@
 package bg.softuni.mobilelele;
 
-import bg.softuni.mobilelele.models.*;
-import bg.softuni.mobilelele.models.enums.Category;
-import bg.softuni.mobilelele.models.enums.Engine;
-import bg.softuni.mobilelele.models.enums.Role;
-import bg.softuni.mobilelele.models.enums.Transmission;
+import bg.softuni.mobilelele.model.*;
+import bg.softuni.mobilelele.model.enums.Category;
+import bg.softuni.mobilelele.model.enums.Engine;
+import bg.softuni.mobilelele.model.enums.Role;
+import bg.softuni.mobilelele.model.enums.Transmission;
 import bg.softuni.mobilelele.repository.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.time.Year;
 
 @Component
 public class CommandLineRunnerImpl implements CommandLineRunner {
@@ -85,7 +84,7 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
         role.setName(Role.USER);
         userRoleRepository.save(role);
 
-        User seller1 = new User();
+        UserEntity seller1 = new UserEntity();
         seller1.setUsername("seller1");
         seller1.setPassword("password1");
         seller1.setFirstName("John");

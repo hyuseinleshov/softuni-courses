@@ -6,14 +6,13 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "users")
-public class UserModel extends BaseEntity {
+public class UserEntity extends BaseEntity {
     @Column(nullable = false, unique = true)
     private String username;
 
@@ -23,6 +22,7 @@ public class UserModel extends BaseEntity {
     @Column(nullable = false)
     private String fullName;
 
+    @Column(nullable = true)
     private int age;
 
     private String email;
@@ -38,7 +38,7 @@ public class UserModel extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private Level level;
 
-    public UserModel() {
+    public UserEntity() {
         this.roles = new ArrayList<>();
     }
 }

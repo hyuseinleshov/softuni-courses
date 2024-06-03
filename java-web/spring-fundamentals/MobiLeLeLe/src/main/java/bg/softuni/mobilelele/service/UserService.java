@@ -1,12 +1,12 @@
 package bg.softuni.mobilelele.service;
 
-import bg.softuni.mobilelele.models.User;
+import bg.softuni.mobilelele.model.UserEntity;
 
 import java.util.List;
 
 public interface UserService {
-    User getById(Long id);
-    List<User> getAll();
-    User save(User user);
+    UserEntity getById(Long id);
+    List<UserEntity> getAll();
+    UserEntity save(UserEntity user);
     void delete(Long id);
 }

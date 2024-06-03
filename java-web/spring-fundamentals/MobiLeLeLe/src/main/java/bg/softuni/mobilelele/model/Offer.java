@@ -1,32 +1,44 @@
-package bg.softuni.mobilelele.service.model;
+package bg.softuni.mobilelele.model;
 
-import bg.softuni.mobilelele.models.enums.Engine;
-import bg.softuni.mobilelele.models.enums.Transmission;
+import bg.softuni.mobilelele.model.enums.Engine;
+import bg.softuni.mobilelele.model.enums.Transmission;
+import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-public class OfferServiceModel {
-    private Long id;
+@Entity
+@Table(name = "offers")
+public class Offer extends BaseEntity {
+    @Column(columnDefinition = "TEXT")
     private String description;
+
+    @Enumerated(EnumType.ORDINAL)
     private Engine engine;
+
+    @Column(name = "image_url")
     private String imageUrl;
+
+    @Column(nullable = true)
     private int mileage;
+
+    @Column(columnDefinition = "DECIMAL(19, 2)")
     private BigDecimal price;
+
+    @Enumerated(EnumType.ORDINAL)
     private Transmission transmission;
+
     private int year;
     private LocalDateTime created;
     private LocalDateTime modified;
-    private ModelServiceModel model;
-    private UserServiceModel seller;
 
-    public Long getId() {
-        return id;
-    }
+    @ManyToOne
+    @JoinColumn(name = "model_id")
+    private Model model;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    @ManyToOne
+    @JoinColumn(name = "seller_id")
+    private UserEntity seller;
 
     public String getDescription() {
         return description;
@@ -100,19 +112,19 @@ public class OfferServiceModel {
         this.modified = modified;
     }
 
-    public ModelServiceModel getModel() {
+    public Model getModel() {
         return model;
     }
 
-    public void setModel(ModelServiceModel model) {
+    public void setModel(Model model) {
         this.model = model;
     }
 
-    public UserServiceModel getSeller() {
+    public UserEntity getSeller() {
         return seller;
     }
 
-    public void setSeller(UserServiceModel seller) {
+    public void setSeller(UserEntity seller) {
         this.seller = seller;
     }
 }

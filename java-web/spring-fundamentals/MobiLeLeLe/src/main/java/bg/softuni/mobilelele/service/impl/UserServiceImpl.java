@@ -1,6 +1,6 @@
 package bg.softuni.mobilelele.service.impl;
 
-import bg.softuni.mobilelele.models.User;
+import bg.softuni.mobilelele.model.UserEntity;
 import bg.softuni.mobilelele.repository.UserRepository;
 import bg.softuni.mobilelele.service.UserService;
 import org.springframework.stereotype.Service;
@@ -16,17 +16,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User getById(Long id) {
+    public UserEntity getById(Long id) {
         return userRepository.findById(id).orElse(null);
     }
 
     @Override
-    public List<User> getAll() {
+    public List<UserEntity> getAll() {
         return userRepository.findAll();
     }
 
     @Override
-    public User save(User user) {
+    public UserEntity save(UserEntity user) {
         return userRepository.save(user);
     }
 

@@ -1,4 +1,4 @@
-package bg.softuni.mobilelele.models;
+package bg.softuni.mobilelele.model;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

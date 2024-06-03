@@ -1,6 +1,6 @@
-package bg.softuni.mobilelele.models;
+package bg.softuni.mobilelele.model;
 
-import bg.softuni.mobilelele.models.enums.Category;
+import bg.softuni.mobilelele.model.enums.Category;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;

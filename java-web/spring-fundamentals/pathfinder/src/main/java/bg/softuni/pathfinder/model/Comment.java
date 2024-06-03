@@ -22,7 +22,7 @@ public class Comment extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "author_id")
-    private UserModel author;
+    private UserEntity author;
 
     @ManyToOne
     @JoinColumn(name = "route_id")

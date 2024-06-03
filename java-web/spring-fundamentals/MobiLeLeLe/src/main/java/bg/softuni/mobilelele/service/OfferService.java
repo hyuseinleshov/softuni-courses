@@ -1,6 +1,6 @@
 package bg.softuni.mobilelele.service;
 
-import bg.softuni.mobilelele.models.Offer;
+import bg.softuni.mobilelele.model.Offer;
 
 import java.util.List;
 
