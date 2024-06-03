@@ -36,7 +36,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorizeRequests ->
                         authorizeRequests
                                 .requestMatchers("/api/auth/**").permitAll()
-                                .requestMatchers("/").permitAll()
+                                .requestMatchers("/", "/static/**", "/css/**","/images/**", "/js/**").permitAll()
                                 .anyRequest().authenticated())
                 .httpBasic(withDefaults());
 
