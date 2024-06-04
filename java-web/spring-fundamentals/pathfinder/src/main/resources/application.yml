@@ -35,6 +35,9 @@ spring:
   #cloud-name:
 logging:
   level:
+    springframework:
+      security: DEBUG
+      web: DEBUG
     org: WARN
     blog: WARN
     org.hibernate.SQL: DEBUG

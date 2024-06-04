@@ -1,6 +1,6 @@
 package bg.softuni.pathfinder.mapper;
 
-import bg.softuni.pathfinder.dto.RegisterDto;
+import bg.softuni.pathfinder.dto.UserRegisterDto;
 import bg.softuni.pathfinder.model.UserEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -11,5 +11,5 @@ public interface UserMapper {
     UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
 
     @Mapping(target = "fullName", source = "fullname")
-    UserEntity toUserEntity(RegisterDto registerDto);
+    UserEntity toUserEntity(UserRegisterDto registerDto);
 }

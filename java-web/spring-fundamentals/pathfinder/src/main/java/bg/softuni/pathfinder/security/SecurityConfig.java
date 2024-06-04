@@ -35,8 +35,9 @@ public class SecurityConfig {
                         sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorizeRequests ->
                         authorizeRequests
-                                .requestMatchers("/api/auth/**").permitAll()
-                                .requestMatchers("/", "/static/**", "/css/**","/images/**", "/js/**").permitAll()
+                                .requestMatchers("/users/**").permitAll()
+                                .requestMatchers("/", "/home").permitAll()
+                                .requestMatchers("/static/**", "/css/**","/images/**", "/js/**").permitAll()
                                 .anyRequest().authenticated())
                 .httpBasic(withDefaults());
 
@@ -52,7 +53,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    PasswordEncoder passwordEncoder() {
+    public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
