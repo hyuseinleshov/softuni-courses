@@ -1,8 +1,12 @@
 package bg.softuni.pathfinder.service.impl;
 
+import bg.softuni.pathfinder.model.Role;
+import bg.softuni.pathfinder.model.enums.UserRole;
 import bg.softuni.pathfinder.repository.RoleRepository;
 import bg.softuni.pathfinder.service.RoleService;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class RoleServiceImpl implements RoleService {
@@ -10,5 +14,11 @@ public class RoleServiceImpl implements RoleService {
 
     public RoleServiceImpl(RoleRepository roleRepository) {
         this.roleRepository = roleRepository;
+    }
+
+
+    @Override
+    public Role findByName(UserRole userRole) {
+        return roleRepository.findByName(userRole);
     }
 }

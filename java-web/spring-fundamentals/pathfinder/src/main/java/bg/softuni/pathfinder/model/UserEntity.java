@@ -27,7 +27,6 @@ public class UserEntity extends BaseEntity {
 
     private String email;
 
-    // TODO Each registered user should have a "User" role
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "users_roles",
             joinColumns = @JoinColumn(name = "user_id"),
