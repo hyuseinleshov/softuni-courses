@@ -6,10 +6,10 @@ import bg.softuni.pathfinder.mapper.UserMapper;
 import bg.softuni.pathfinder.model.Role;
 import bg.softuni.pathfinder.model.UserEntity;
 import bg.softuni.pathfinder.model.enums.UserRole;
-import bg.softuni.pathfinder.repository.RoleRepository;
 import bg.softuni.pathfinder.security.JwtGenerator;
 import bg.softuni.pathfinder.service.RoleService;
 import bg.softuni.pathfinder.service.UserService;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -26,21 +26,14 @@ import java.util.Collections;
 @Controller
 @RequestMapping("/users")
 public class AuthController {
-
     private final AuthenticationManager authenticationManager;
     private final UserService userService;
-    private final RoleService roleService;
-    private final PasswordEncoder passwordEncoder;
     private final JwtGenerator jwtGenerator;
-    private final UserMapper userMapper;
 
-    public AuthController(AuthenticationManager authenticationManager, UserService userService, RoleService roleService, PasswordEncoder passwordEncoder, JwtGenerator jwtGenerator, UserMapper userMapper) {
+    public AuthController(AuthenticationManager authenticationManager, UserService userService, JwtGenerator jwtGenerator) {
         this.authenticationManager = authenticationManager;
         this.userService = userService;
-        this.roleService = roleService;
-        this.passwordEncoder = passwordEncoder;
         this.jwtGenerator = jwtGenerator;
-        this.userMapper = userMapper;
     }
 
     @GetMapping("/login")
@@ -50,15 +43,19 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public String login(UserLoginDto userLoginDto) {
+    public String login(UserLoginDto userLoginDto, HttpSession session) {
         try {
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
                             userLoginDto.getUsername(),
                             userLoginDto.getPassword()));
 
-            SecurityContextHolder.getContext().setAuthentication(authentication);
-            String token = jwtGenerator.generateToken(authentication);
+//            SecurityContextHolder.getContext().setAuthentication(authentication);
+//            String token = jwtGenerator.generateToken(authentication);
+
+            String username = authentication.getName();
+            UserEntity currentUser = userService.findByUsername(username);
+            session.setAttribute("currentUser", currentUser);
         } catch (Exception e) {
             return "login";
         }
@@ -73,19 +70,13 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public String register(UserRegisterDto userRegisterDto, Model model) {
+    public String register(UserRegisterDto userRegisterDto) {
         if (userService.existByUsername(userRegisterDto.getUsername())) {
             return "register";
         }
 
-        UserEntity user = userMapper.toUserEntity(userRegisterDto);
-        user.setPassword(passwordEncoder.encode((userRegisterDto.getPassword())));
+        userService.registerUser(userRegisterDto);
 
-        Role roles = roleService.findByName(UserRole.USER);
-        user.setRoles(Collections.singletonList(roles));
-
-        userService.registerUser(user);
-
-        return "redirect:/login";
+        return "redirect:/users/login";
     }
 }
