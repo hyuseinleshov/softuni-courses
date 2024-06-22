@@ -1,6 +1,8 @@
 package com.resellerapp.controller;
 
+import com.resellerapp.config.UserSession;
 import com.resellerapp.dto.UserRegisterDto;
+import com.resellerapp.model.entity.User;
 import com.resellerapp.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,14 +18,20 @@ import javax.validation.Valid;
 @RequestMapping("/users")
 public class UserController {
     private final UserService userService;
+    private final UserSession userSession;
 
-    public UserController(UserService userService) {
+    public UserController(UserService userService, UserSession userSession) {
         this.userService = userService;
+        this.userSession = userSession;
     }
 
     @GetMapping("/login")
     public String showLoginPage() {
-        return "login";
+        userSession.setUsername("test");
+        userSession.setId(1);
+
+        System.out.println(userSession.isLoggedIn());
+        return "redirect:/home";
     }
 
     @GetMapping("/register")
