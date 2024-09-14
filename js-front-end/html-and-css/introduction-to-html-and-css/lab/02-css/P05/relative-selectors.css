@@ -1,0 +1,19 @@
+section p {
+    color: green;
+}
+
+ul > li {
+    font-weight: bold;
+}
+
+article.highlighted + article {
+    background-color: pink;
+}
+
+h2 ~ p {
+    color: red;
+}
+
+li.links li a {
+    background-color: yellow;
+}

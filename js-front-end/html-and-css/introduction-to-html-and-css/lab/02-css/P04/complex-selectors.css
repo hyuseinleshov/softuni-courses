@@ -1,0 +1,64 @@
+nav a.home {
+    font-weight: bold;
+}
+
+nav a.services {
+    font-style: italic;
+}
+
+.services > section {
+    background-color: aqua;
+}
+
+header + section {
+    text-decoration-line: underline;
+}
+
+article ~ footer {
+    background-color: antiquewhite;
+}
+
+form.form-container input[type="text"] {
+    border: 2px solid #007BFF;
+    background-color: #f0f8ff;
+    padding: 8px;
+}
+
+ul.item-list li:first-child {
+    font-weight: bold;
+    color: green;
+}
+
+ul.item-list li:last-child {
+    color: red;
+}
+
+ul.item-list li:nth-of-type(2n) {
+    background-color: #f0f0f0;
+}
+
+p.quote::before {
+    content: "“"; /* Add an opening quotation mark */
+    font-size: 24px;
+    color: gray;
+    margin-right: 5px;
+}
+
+p.quote::after {
+    content: "”"; /* Add a closing quotation mark */
+    font-size: 24px;
+    color: gray;
+    margin-left: 5px;
+}
+
+section > h1::before {
+    content: ">>";
+    font-size: 25px;
+    color: red;
+}
+
+section > h1::after {
+    content: "<<";
+    font-size: 25px;
+    color: red;
+}

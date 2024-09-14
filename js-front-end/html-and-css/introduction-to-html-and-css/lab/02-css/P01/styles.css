@@ -1,0 +1,31 @@
+h2 {
+    color: green;
+}
+
+p {
+    font-size: 16px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+#main-title {
+    color: red;
+}
+
+#special-paragraph {
+    font-style: italic;
+}
+
+ul {
+    list-style-type: georgian;
+}
+
+li {
+    color: blue;
+}
+
+div {
+    background-color: bisque;
+}
