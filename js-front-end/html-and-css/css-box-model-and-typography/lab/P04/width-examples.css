@@ -1,0 +1,26 @@
+div {
+    border: 2px solid black;
+    margin: 15px 1px;
+    padding: 2px 10px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.first {
+    width: 300px;
+}
+
+.second {
+    width: 50%;
+}
+
+.third {
+    width: 50vw;
+}
+
+.fourth {
+    min-width: 100px;
+    max-width: 300px;
+}

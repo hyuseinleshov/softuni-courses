@@ -1,0 +1,29 @@
+div {
+    border: 2px solid black;
+    margin: 10px 2px;
+    padding: 10px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.first {
+    font-family: 'Arial', sans-serif;
+}
+
+.second {
+    font-size: 24px;
+}
+
+.third {
+    font-weight: bold;
+}
+
+.fourth {
+    font-style: italic;
+}
+
+.fifth {
+    font-variant: small-caps;
+}
