@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.main {
+    border: 3px solid #008000;
+    height: 100;
+}
+
+.main section {
+    border: 3px solid #000000;
+    margin: 30px;
+    padding: 15px;
+}
+
+.main section div {
+    border: 3px solid #0000ff;
+    margin: 0 80px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
