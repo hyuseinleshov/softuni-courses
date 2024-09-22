@@ -1,0 +1,44 @@
+body {
+    background-color: #EBEBEB;
+}
+
+.card {
+    width: 380px;
+    height: 540px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card .content {
+    padding: 10px 30px;
+    font-family: "Lato", sans-serif;
+}
+
+.card .content h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 21px;
+}
+
+.card .content p {
+    font-size: 17px;
+    margin: 0;
+}
+
+.card .content a {
+    font-size: 17px;
+    font-style: italic;
+    text-decoration: none;
+    color: #000000;
+}
+
+.card .content .excerpt {
+    margin-bottom: 30px;
+}
+
+.card .image img {
+    width: 380px;
+}
