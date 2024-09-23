@@ -1,0 +1,27 @@
+.accordion {
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.accordion details {
+    border: 2px solid #d3d1d1;
+    border-bottom: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.accordion details:last-child {
+    border-bottom: 2px solid #d3d1d1;
+}
+
+.accordion details summary {
+    margin: 15px 25px;
+    font-weight: bold;
+    list-style-type: '> ';
+    cursor: pointer;
+}
+
+.accordion details .content {
+    padding: 20px;
+    font-size: 15px;
+    padding-top: 1px;
+}

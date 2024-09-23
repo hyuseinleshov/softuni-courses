@@ -1,0 +1,24 @@
+.content {
+    margin: 40px 10px;
+}
+
+.content h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 15px 10px;
+}
+
+.content .icon-container {
+    width: 70px;
+    height: 70px;
+    background-color: #EBEBEB;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.content .icon-container i {
+    font-size: 25px;
+    color: black;
+}
