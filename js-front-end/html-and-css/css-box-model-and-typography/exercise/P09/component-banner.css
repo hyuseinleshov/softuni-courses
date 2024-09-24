@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+.background-banner {
+    background-image: url("/exercise/P09/images/image1.jpg");
+    margin-top: -170px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1536px;
+    height: 675px;
+    position: relative;
+}
+
+.background-banner header {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 350px;
+    left: 520px;
+}
+
+.background-banner header h1 {
+    margin-left: 105px;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.background-banner header h2 {
+    font-size: 25px;
+    margin-top: 5px;
+}
