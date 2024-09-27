@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex order</title>
+    <link rel="stylesheet" href="flex-order.css">
+</head>
+<body>
+    <div class="container">
+        <section class="first-box">
+            <header class="box header">
+                <p>Header</p>
+            </header>
+
+            <main class="box main-content">
+                <p>Main content</p>
+            </main>
+
+            <aside class="box sidebar">
+                <p>Sidebar</p>
+            </aside>
+
+            <footer class="box site-footer">
+                <p>Site footer</p>
+            </footer>
+        </section>
+
+        <section class="second-box">
+            <header class="box header order-one">
+                <p>Header</p>
+            </header>
+
+            <main class="box main-content order-three">
+                <p>Main content</p>
+            </main>
+
+            <aside class="box sidebar order-two">
+                <p>Sidebar</p>
+            </aside>
+
+            <footer class="box site-footer order-four">
+                <p>Site footer</p>
+            </footer>
+        </section>
+    </div>
+</body>
+</html>
