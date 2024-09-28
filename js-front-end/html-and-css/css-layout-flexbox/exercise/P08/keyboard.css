@@ -8,3 +8,54 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    background-color: #DDDDDD;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.key.large {
+    min-width: 70px;
+}
+
+.key.extra-large {
+    min-width: 300px;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}

@@ -8,3 +8,62 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+body {
+    background-color: #EEEEEE;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    width: 800px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+}
+
+article .left-part {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+article .right-part .rectangle {
+    width: 220px;
+    height: 180px;
+    background-color: #EEEEEE;
+    border: 1px solid silver;
+    border-radius: 3px;
+}
+
+.caption {
+    color: #858585;
+}
+
+.left-part footer a {
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.left-part footer a:first-child {
+    background-color: #663399;
+    color: white;
+    margin-right: 10px;
+}
+
+.left-part footer a:nth-child(2) {
+    background-color: #EEEEEE;
+}
+
+main p {
+    font-size: 14px;
+    color: #858585;
+}
+
+footer {
+    margin-top: 10px;
+}
