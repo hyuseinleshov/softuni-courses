@@ -9,3 +9,95 @@ a {
     color: inherit;
 }
 
+body {
+    background-color: #EEE;
+    font-family: "Lato", sans-serif;
+}
+
+.site {
+    max-width: 1200px;
+    margin: 30px auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    background-color: #FFF;
+    padding: 60px 30px 30px 30px;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+header,
+main {
+    border-bottom: 2px solid gray;
+}
+
+main {
+    padding: 20px 0;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+article h2 {
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+article p {
+    margin: 20px 0;
+}
+
+article ul {
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.indent-20 {
+    margin-left: 20px;
+}
+
+article ul li {
+    margin-bottom: 10px;
+}
+
+article ol {
+    margin-left: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #DDD;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #DDD;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid silver;
+    margin-left: 40px;
+    padding-left: 30px;
+}
+
+.quote .author {
+    align-self: end;
+}
+
+.site p,
+.site table,
+.site ul,
+.site ol {
+    font-size: 18px;
+}

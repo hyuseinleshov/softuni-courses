@@ -9,3 +9,75 @@ a {
     color: inherit;
 }
 
+body {
+    background-color: #EEE;
+    font-family: "Lato", sans-serif;
+}
+
+.site {
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+}
+
+header h1 {
+    color: #009900;
+    padding: 30px;
+    background-color: #F8F8F8;
+}
+
+.menu,
+footer {
+    background-color: #444;
+    color: #DDD;
+    text-align: center;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    flex: 1 0 auto;
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 0;
+}
+
+.content {
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+}
+
+.content main,
+.content aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer {
+    padding: 15px 0;
+}
+
+@media (max-width: 600px) {
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu a {
+        border-bottom: 1px solid gray;
+        padding: 20px 0;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}

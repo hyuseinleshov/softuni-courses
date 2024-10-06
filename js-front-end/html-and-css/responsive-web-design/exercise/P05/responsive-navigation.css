@@ -9,3 +9,40 @@ a {
     color: inherit;
 }
 
+body {
+    background-color: #EEE;
+    font-family: "Lato", sans-serif;
+}
+
+.navigation {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+    margin: 25px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul a {
+    display: block;
+    padding: 15px 20px;
+    background-color: #EEE;
+    border-radius: 5px;
+}
+
+h2 {
+    align-content: center;
+    margin-left: 40px;
+    font-size: 28px;
+}

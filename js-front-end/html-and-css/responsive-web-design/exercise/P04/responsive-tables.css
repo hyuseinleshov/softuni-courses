@@ -9,3 +9,44 @@ a {
     color: inherit;
 }
 
+body {
+    background-color: #EEE;
+    font-family: "Lato", sans-serif;
+}
+
+.tables {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.table-one,
+.table-two {
+    background-color: #FFF;
+    border: 1px solid silver;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 18px;
+}
+
+td, th {
+    border-top: 1px solid #DDD;
+    text-align: left;
+    padding: 15px;
+}
+
+.table-one h2 {
+    padding: 20px;
+}
+
+th {
+    background-color: #EEE;
+    font-weight: 800;
+}
