@@ -9,3 +9,84 @@ a {
     color: inherit;
 }
 
+body {
+    background-color: #EEE;
+    font-family: "Lato", sans-serif;
+}
+
+.banner {
+    max-width: 1200px;
+    background-color: #FFF;
+    margin: 50px auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 3px;
+    padding: 30px;
+    display: flex;
+    gap: 60px;
+}
+
+.left-side {
+    flex: 0 0 60%;
+}
+
+.label {
+    font-size: 25px;
+    font-weight: 700;
+    color: #7F7F7F;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.excerpt {
+    font-size: 18px;
+    color: #727272;
+    margin-bottom: 20px;
+    line-height: 23px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons li:first-child {
+    background-color: #663399;
+    color: white;
+    border-radius: 5px;
+}
+
+.buttons li:last-child {
+    background-color: #EEE;
+    color: gray;
+    border-radius: 5px;
+}
+
+a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.square {
+    width: 280px;
+    height: 100%;
+    background-color: #EEE;
+    border: 1px solid silver;
+    border-radius: 3px;
+}
+
+@media (max-width: 800px) {
+    .banner {
+        gap: 40px;
+    }
+
+    .square {
+        width: 220px;
+        height: 100%;
+    }
+}
