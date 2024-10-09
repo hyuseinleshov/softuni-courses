@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiselect</title>
+    <link rel="stylesheet" href="media-types.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Multiselect</h1>
+    <p>This Boolean attribute indicates that multiple options can be selected in the list. If it is not specified, then only one option can be selected at a time. When multiple is specified, most browsers will show a scrolling list box instead of a single line dropdown.</p>
+    <code>
+        &lt;label for=&quot;pet-select&quot;&gt;Choose a pet:&lt;/label&gt;<br>
+        &lt;select name=&quot;pets&quot; id=&quot;pet-select&quot; multiple&gt;<br>
+        &nbsp;&nbsp;&lt;option value=&quot;dog&quot;&gt;Dog&lt;/option&gt;<br>
+        &nbsp;&nbsp;&lt;option value=&quot;cat&quot;&gt;Cat&lt;/option&gt;<br>
+        &nbsp;&nbsp;&lt;option value=&quot;hamster&quot;&gt;Hamster&lt;/option&gt;<br>
+        &nbsp;&nbsp;&lt;option value=&quot;parrot&quot;&gt;Parrot&lt;/option&gt;<br>
+        &nbsp;&nbsp;&lt;option value=&quot;spider&quot;&gt;Spider&lt;/option&gt;<br>
+        &nbsp;&nbsp;&lt;option value=&quot;goldfish&quot;&gt;Goldfish&lt;/option&gt;<br>
+        &lt;/select&gt;<br>
+        &lt;i&gt;hold Ctrl/Cmd to select more than one item&lt;/i&gt;
+    </code>    
+    <label for="pet-select">Choose a pet:</label>
+    <select name="pets" id="pet-select" multiple>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+    </select>
+    <i>hold Ctrl/Cmd to select more than one item</i>
+</body>
+</html>

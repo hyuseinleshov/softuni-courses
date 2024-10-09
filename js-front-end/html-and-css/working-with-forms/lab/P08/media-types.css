@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 'Lato' , sans-serif;
+}
+
+body {
+    padding: 2em;
+    font-family: inherit;
+}
+
+input, textarea, select, option {
+    font-family: inherit;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+code {
+    display: block;
+    padding: 2em;
+    border-radius: 0.3em;
+    margin: 2em 0;
+    border: 1px solid #CCC;
+    overflow: auto;
+    background-color: #EEE;
+}
+
+input {
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #CCC;
+    outline: none;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #090;
+}
+
+button {
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+fieldset {
+    padding: 2em;
+    border: 2px solid #CCC;
+    max-width: 50ch;
+}
+
+fieldset legend {
+    padding: 0 1em;
+    font-weight: bold;
+}
+
+fieldset label {
+    font-weight: bold;
+}
+
+fieldset input {
+    display: block;
+    width: 100%;
+}
+
+.field {
+    padding-bottom: 1.5em;
+}
