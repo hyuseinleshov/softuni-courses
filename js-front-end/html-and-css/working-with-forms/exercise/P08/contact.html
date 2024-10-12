@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contact">
+        <h2>Contact</h2>
+
+        <form action="#">
+            <div class="field">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name">
+                <p>First and Last name is enough</p>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <p>example: john.doe@gmail.com</p>
+            </div>
+
+            <div class="field">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject">
+                <p>What is this about?
+                </p>
+            </div>
+
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="3"></textarea>
+                <p>Let us know what you need</p>
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

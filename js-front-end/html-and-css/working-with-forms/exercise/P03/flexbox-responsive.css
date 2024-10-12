@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato' , sans-serif;
+    background-color: #EEE;
+}
+
+.subscription {
+    background-color: #FFF;
+    padding: 15px;
+    max-width: 750px;
+    border-radius: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 40vh auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input {
+    padding: 15px;
+    background-color: #EDEDED;
+    border: none;
+    border-radius: 3px;
+}
+
+input[name=email] {
+    flex: 1 0 50%;
+}
+
+input[type=submit] {
+    background-color: #FF8C00;
+    color: white;
+    flex: 1 0 20%;
+}
+
+@media (max-width: 750px) {
+    .subscription {
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 550px) {
+    .subscription {
+        max-width: 315px;
+    }
+    input {
+        flex: 0 0 100%;
+    }
+}

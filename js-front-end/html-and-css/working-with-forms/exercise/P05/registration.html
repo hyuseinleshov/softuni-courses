@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="registration">
+        <h2>Registration</h2>
+
+        <form action="#">
+            <fieldset class="login-info">
+                <legend>Login Information</legend>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                    <p>example: john.doe@gmail.com</p>
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <p>minimum 6 characters, letters and numbers, at least 1 special character</p>
+                </div>
+            </fieldset>
+    
+            <fieldset class="additional-info">
+                <legend>Additional Information</legend>
+    
+                <div class="field">
+                    <label for="date-of-birth">Date of Birth</label>
+                    <input type="date" name="date-of-birth" id="date-of-birth">
+                    <p>example: john.doe@gmail.com</p>
+                </div>
+            </fieldset>
+    
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

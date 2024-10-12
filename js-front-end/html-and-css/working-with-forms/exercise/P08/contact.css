@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato' , sans-serif;
+    background-color: #EEE;
+}
+
+.contact {
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 30px auto;
+    width: 450px;
+    padding: 25px;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    border: none;
+    border-bottom: 2px solid silver;
+    padding: 5px;
+}
+
+.field p {
+    font-size: 14px;
+    color: gray;
+    font-style: italic;
+}
+
+button[type=submit] {
+    padding: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+}

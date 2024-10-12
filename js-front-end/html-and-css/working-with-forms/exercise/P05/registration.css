@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato' , sans-serif;
+    background-color: #EEE;
+}
+
+.registration {
+    background-color: #FFF;
+    width: 500px;
+    margin: 20px auto;
+    border-radius: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset {
+    padding: 25px;
+    border: 2px solid silver;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+legend {
+    padding: 0 8px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid silver;
+    padding: 5px;
+}
+
+input[type=date] {
+    padding: 10px 0;
+}
+
+.field p {
+    color: gray;
+    font-style: italic;
+    font-size: 14px;
+}
+
+button[type=submit] {
+    padding: 10px 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+}

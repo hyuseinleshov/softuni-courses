@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato' , sans-serif;
+    background-color: #EEE;
+}
+
+.login-form {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px 40px 50px;
+    max-width: 450px;
+    margin: 30px auto;
+    border-radius: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+h2 {
+    padding-bottom: 20px;
+    width: 130px;
+    border-bottom: 2px solid silver;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.field:has(input[required]) label::after {
+    content: ' *';
+    font-size: 18px;
+    color: red;
+}
+
+input {
+    padding: 15px;
+    border: 2px solid silver;
+    border-radius: 3px;
+}
+
+input[type=submit] {
+    border: none;
+    color: white;
+    background-color: #FF8C00;
+    font-weight: 600;
+}
+
+.field p {
+    font-size: 13px;
+    font-style: italic;
+    color: gray;
+}

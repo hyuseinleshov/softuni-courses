@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato' , sans-serif;
+    background-color: #EEE;
+}
+
+div {
+    border: 2px solid blue;
+    padding: 20px 15vw;
+    margin: 25px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
