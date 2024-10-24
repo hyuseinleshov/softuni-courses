@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: "Roboto", serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-section {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('/assets/bg.jpg');
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+#logo {
+    height: 45px;
+}
+
+#signIn {
+    background-color: #E50914;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 0 40px;
+}
+
+.hero-section .content {
+    margin: auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+input {
+    padding: 15px 5px;
+    width: 370px;
+    font-size: 13px;
+}
+
+button {
+    padding: 14px;
+    width: 220px;
+    font-size: 20px;
+    color: white;
+    background-color: #E50914;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-section p {
+    font-size: 14px;
+}
+
+.hero-section .label {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+section {
+    border-bottom: 7px solid #222;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.font-size-40px {
+    font-size: 40px;
+}
+
+.width-400px {
+    width: 400px;
+}
+
+.info-image {
+    height: 280px;
+}
+
+.info-section {
+    padding: 40px 0 40px 0;
+}
+
+.questions-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 600px;
+}
+
+details {
+    background-color: #303030;
+    font-size: 1.5rem;
+}
+
+summary {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+summary:after {
+    content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #AAA;
+    margin-bottom: 10px;
+}
+
+details[open] summary:after {
+    content: "\00D7";
+}
+
+details[open] p {
+    padding: 15px 20px;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.faq h2 {
+    font-size: 40px;
+}
+
+.membership {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.links {
+    color: #5A686F;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+}
