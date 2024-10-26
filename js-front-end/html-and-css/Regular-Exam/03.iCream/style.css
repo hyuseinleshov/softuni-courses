@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins';
+    color: white;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pink-background {
+    background-color: #F195B2;
+}
+
+.first-section {
+    padding: 10px 0 40px 0;
+    position: relative;
+}
+
+header {
+    gap: 5px;
+    font-size: 14px;
+}
+
+.links {
+    gap: 5px;
+}
+
+.links a {
+    padding: 0 10px;
+}
+
+.icons i {
+    padding: 0 10px;
+}
+
+#help::after {
+    width: 2px;
+    height: 5px;
+    background-color: white;
+}
+
+.hero-section {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('/03.iCream/images/carousel-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 680px;
+}
+
+.border-bottom {
+    border-bottom: 5px solid #AAACB2;
+}
+
+nav {
+    background-color: white;
+    color: black;
+    padding: 0 100px;
+    border-radius: 30px;
+    max-width: 900px;
+    position: absolute;
+    top: 60px;
+}
+
+nav ul {
+    gap: 15px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.logo {
+    color: #F195B2;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.logo-i {
+    color: #62C3E7;
+}
+
+.hero-section-content {
+    max-width: 600px;
+    gap: 20px;
+}
+
+.hero-section-content p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero-section-content h1 {
+    font-size: 60px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.hero-section-content a {
+    padding: 8px 15px;
+    background-color: #F195B2;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.light-blue-background {
+    background-color: #C8E7F8;
+}
+
+.third-section {
+    color: #555;
+    padding: 70px 0;
+    gap: 10px;
+    position: relative;
+}
+
+.line {
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    top: 65px;
+    background-color: #F195B2;
+}
+
+.third-section h2 {
+    font-size: 30px;
+}
+
+.third-section-content {
+    gap: 25px;
+}
+
+.third-section-content p {
+    font-size: 14px;
+}
+
+.third-section-content a {
+    color: white;
+    padding: 5px 17px;
+    align-self: flex-start;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.about-us a {
+    background-color: #62C3E7;
+}
+
+.our-features a {
+    background-color: #F195B2;
+}
+
+.third-section-content img {
+    height: 380px;
+}
+
+.third-section-content > div {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.about-us h3, .our-features h3 {
+    font-size: 20px;
+}
+
+.checkbox {
+    gap: 10px;
+}
+
+.checkbox i {
+    color: #62C3E7;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+p.bolded {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer {
+    height: 400px;
+    color: black;
+    gap: 20px;
+}
+
+.social-media {
+    color: #555;
+    gap: 5px;
+}
+
+.social-media a {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #add6ed;
+    border-radius: 50%;
+    color: #62C3E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logo {
+    font-size: 48px;
+}
+
+.info, .copyright {
+    opacity: 0.7;
+}
+
+.copyright {
+    font-size: 15px;
+}
+
+.contacts {
+    padding-right: 13px;
+    border-right: 1px solid black;
+    text-align: right;
+}
+
+.opening-hours {
+    padding-left: 13px;
+}
+
+.domain {
+    color: #F195B2;
+}
+
+.info {
+    margin-right: 23px;
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+.container {
+    max-width: 1300px;
+    padding: 20px 65px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 3px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+img {
+    height: 100%;
+    width: 430px;
+}
+
+.content {
+    flex: 0 0 calc(62% - 35px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top {
+    background-color: #F3F3F3;
+    border-left: 3px solid #7AB730;
+    padding: 15px 25px;
+}
+
+.top p {
+    font-size: 10px;
+    color: #7AB730;;
+    font-weight: 600;
+}
+
+.top h1 {
+    font-size: 38px;
+    line-height: 1.1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content > p {
+    font-size: 11px;
+    margin-left: 30px;
+    font-weight: 500;
+    color: #2c2828;
+}
+
+.bottom {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px 30px 20px;
+}
+
+.headings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.headings p {
+    flex: 0 0 50%;
+    text-align: center;
+    font-size: 14px;
+    color: green;
+}
+
+.headings p:first-child {
+    background-color: #7AB730;
+    color: white;
+}
+
+.bottom > p {
+    font-size: 10px;
+    color: #2c2828;;
+}
