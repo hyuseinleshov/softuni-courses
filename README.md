@@ -25,6 +25,7 @@ You can get more information about SoftUni curriculum here https://softuni.bg/cu
 | <a href="https://softuni.bg/trainings/4366/spring-data-february-2024"> Spring Data </a>                                          | <a href="https://softuni.bg/certificates/details/209392/671c2ba4"> Link</a> |
 | <a href="https://softuni.bg/trainings/4530/spring-fundamentals-may-2024"> Spring Fundamentals </a>                               | <a href="https://softuni.bg/certificates/details/219356/a1a72f16"> Link</a> |
 | <a href="https://softuni.bg/trainings/4532/spring-advanced-june-2024"> Spring Advanced </a>                                      | <a href="https://softuni.bg/certificates/details/223365/3615bf9f"> Link</a> |
+| <a href="https://softuni.bg/trainings/4715/html-css-september-2024"> HTML & CSS </a>                                      | <a href="https://softuni.bg/certificates/details/228773/7d85710f"> Link</a> |
 
 </td>
 </tr>
