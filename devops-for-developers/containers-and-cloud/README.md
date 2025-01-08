@@ -1,0 +1,2 @@
+# Containers and Cloud - february 2025
+The main goal of the "Containers and Cloud" course is to introduce the best practices for creating containers with Docker and subsequently deploying them on cloud infrastructure. The course covers the necessary Linux Shell commands and teaches how to work with Docker Compose to create containers. It examines in detail what cloud infrastructure is and how it can be managed with code. After this course, participants can confidently work with containers in a cloud environment.
