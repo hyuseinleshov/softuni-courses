@@ -28,6 +28,7 @@ You can get more information about SoftUni curriculum here https://softuni.bg/cu
 | <a href="https://softuni.bg/trainings/4715/html-css-september-2024"> HTML & CSS </a>                                             | <a href="https://softuni.bg/certificates/details/228773/7d85710f"> Link</a> |
 | <a href="https://softuni.bg/trainings/4716/js-front-end-october-2024"> JS Front-End </a>                                         | <a href="https://softuni.bg/certificates/details/232459/329fd4b4"> Link</a> |
 | <a href="https://softuni.bg/trainings/4851/software-engineering-and-devops-january-2025"> Software Engineering and DevOps </a>   | <a href="https://softuni.bg/certificates/details/238904/fd09b884"> Link</a> |
+| <a href="https://softuni.bg/trainings/4852/containers-and-cloud-february-2025"> Containers and Cloud </a>                        | <a href="https://softuni.bg/certificates/details/242466/32af7b9a"> Link</a> |
 
 </td>
 </tr>
