@@ -17,6 +17,7 @@ You can get more information about SoftUni curriculum here https://softuni.bg/cu
 
 | **Course**                                                                                                                       | **Link**                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| <p><strong>Diploma</strong></p>                                                                                                  | <a href="https://softuni.bg/certificates/details/243691/6ac529c3"> Link</a> |
 | <a href="https://softuni.bg/trainings/3990/programming-basics-with-java-january-2023" > Programming Basics with java </a>        | <a href="https://softuni.bg/certificates/details/159477/c0e20df7"> Link</a> |
 | <a href="https://softuni.bg/trainings/4095/programming-fundamentals-with-java-may-2023"> Programming Fundamentals with Java </a> | <a href="https://softuni.bg/certificates/details/179938/8d4505a5"> Link</a> |
 | <a href="https://softuni.bg/trainings/4225/java-advanced-september-2023"> Java Advanced </a>                                     | <a href="https://softuni.bg/certificates/details/188685/f2b11819"> Link</a> |
